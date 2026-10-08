@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | Hamza & Daughter of Mr. Javed Butt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #faf8f5;
+            --card-bg: #ffffff;
+            --text-primary: #2c2c2c;
+            --text-secondary: #666666;
+            --accent-gold: #c5a059;
+            --accent-gold-hover: #b08d46;
+            --border-color: #e8e2d8;
+            --shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            margin-bottom: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+        }
+
+        .bismillah {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2rem;
+            color: var(--accent-gold);
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .invitation-text {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        .couple-names {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: var(--text-primary);
+            margin: 15px 0;
+            line-height: 1.3;
+        }
+
+        .ampersand {
+            color: var(--accent-gold);
+            font-family: 'Cinzel', serif;
+            display: block;
+            font-size: 1.4rem;
+            margin: 5px 0;
+        }
+
+        .countdown-title {
+            text-align: center;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .countdown-item {
+            background: var(--bg-color);
+            padding: 10px 15px;
+            border-radius: 8px;
+            min-width: 65px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .countdown-number {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+        }
+
+        .countdown-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            font-size: 1.4rem;
+            color: var(--text-primary);
+            margin: 35px 0 20px;
+            position: relative;
+        }
+
+        .event-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: transform 0.2s ease;
+        }
+
+        .event-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+        }
+
+        .event-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: var(--accent-gold);
+            font-weight: 700;
+        }
+
+        .event-date {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            background: var(--bg-color);
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        .event-details {
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .event-details p {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: var(--text-secondary);
+        }
+
+        .event-details i {
+            color: var(--accent-gold);
+            margin-top: 4px;
+            width: 16px;
+        }
+
+        .event-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            flex: 1;
+            min-width: 140px;
+            padding: 10px 15px;
+            border: 1px solid var(--accent-gold);
+            border-radius: 6px;
+            background: transparent;
+            color: var(--accent-gold);
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background: var(--accent-gold);
+            color: #ffffff;
+        }
+
+        .btn-primary {
+            background: var(--accent-gold);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-gold-hover);
+        }
+
+        .rsvp-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            margin-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            outline: none;
+        }
+
+        .form-control:focus {
+            border-color: var(--accent-gold);
+        }
+
+        .checkbox-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 480px) {
+            .couple-names { font-size: 1.5rem; }
+            .countdown-item { padding: 8px 10px; min-width: 55px; }
+            .countdown-number { font-size: 1.1rem; }
+            .btn { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="bismillah">‎بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+            <div class="invitation-text">Together with their families</div>
+            <div class="couple-names">
+                Hamza Khalid
+                <span class="ampersand">&</span>
+                Daughter of Mr. Javed Butt
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 10px;">
+                Request the pleasure of your company to celebrate their wedding ceremonies
+            </p>
+
+            <div style="margin-top: 25px;">
+                <div class="countdown-title">Countdown to Baraat</div>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">00</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Mins</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Secs</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <h2 class="section-title">Wedding Events</h2>
+
+        <!-- Mehndi -->
+        <div class="event-card">
+            <div class="event-header">
+                <div class="event-name">Mehndi</div>
+                <div class="event-date">3rd Dec 2026</div>
+            </div>
+            <div class="event-details">
+                <p><i class="far fa-clock"></i> 07:00 PM</p>
+                <p><i class="fas fa-map-marker-alt"></i> Royal Palace Banquet Hall, 1 Bedian Rd, Lahore</p>
+            </div>
+            <div class="event-actions">
+                <a href="https://maps.app.goo.gl/8nF5A1uRBrfhpQRs9" target="_blank" class="btn">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Mehndi+-+Hamza+Wedding&dates=20261203T140000Z/20261203T180000Z&details=Mehndi+Ceremony&location=Royal+Palace+Banquet+Hall,+1+Bedian+Rd,+Lahore" target="_blank" class="btn">
+                    <i class="far fa-calendar-alt"></i> Save To Calendar
+                </a>
+            </div>
+        </div>
+
+        <!-- Baraat -->
+        <div class="event-card">
+            <div class="event-header">
+                <div class="event-name">Baraat</div>
+                <div class="event-date">4th Dec 2026</div>
+            </div>
+            <div class="event-details">
+                <p><i class="far fa-clock"></i> 06:00 PM</p>
+                <p><i class="fas fa-map-marker-alt"></i> Thokar Niaz Baig, Lahore</p>
+            </div>
+            <div class="event-actions">
+                <a href="https://maps.google.com/?q=Thokar+Niaz+Baig+Lahore" target="_blank" class="btn">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Baraat+-+Hamza+Wedding&dates=20261204T130000Z/20261204T170000Z&details=Baraat+Ceremony&location=Thokar+Niaz+Baig,+Lahore" target="_blank" class="btn">
+                    <i class="far fa-calendar-alt"></i> Save To Calendar
+                </a>
+            </div>
+        </div>
+
+        <!-- Walima -->
+        <div class="event-card">
+            <div class="event-header">
+                <div class="event-name">Walima</div>
+                <div class="event-date">5th Dec 2026</div>
+            </div>
+            <div class="event-details">
+                <p><i class="far fa-clock"></i> 06:00 PM</p>
+                <p><i class="fas fa-map-marker-alt"></i> Royal Palace Banquet Hall, 1 Bedian Rd, Lahore</p>
+            </div>
+            <div class="event-actions">
+                <a href="https://maps.app.goo.gl/8nF5A1uRBrfhpQRs9" target="_blank" class="btn">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Walima+-+Hamza+Wedding&dates=20261205T130000Z/20261205T170000Z&details=Walima+Reception&location=Royal+Palace+Banquet+Hall,+1+Bedian+Rd,+Lahore" target="_blank" class="btn">
+                    <i class="far fa-calendar-alt"></i> Save To Calendar
+                </a>
+            </div>
+        </div>
+
+        <!-- RSVP Form -->
+        <div class="rsvp-section">
+            <h3 style="font-family: 'Cinzel', serif; color: var(--accent-gold); margin-bottom: 15px; text-align: center;">RSVP via WhatsApp</h3>
+            <form id="rsvpForm">
+                <div class="form-group">
+                    <label for="guestName">Your Name</label>
+                    <input type="text" id="guestName" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Functions Attending</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label"><input type="checkbox" value="Mehndi" class="event-check"> Mehndi</label>
+                        <label class="checkbox-label"><input type="checkbox" value="Baraat" class="event-check" checked> Baraat</label>
+                        <label class="checkbox-label"><input type="checkbox" value="Walima" class="event-check"> Walima</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="wishes">Wishes / Message (Optional)</label>
+                    <textarea id="wishes" class="form-control" rows="2" placeholder="Send your prayers & blessings..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+                    <i class="fab fa-whatsapp"></i> Send RSVP via WhatsApp
+                </button>
+            </form>
+        </div>
+
+        <footer>
+            <p>We look forward to celebrating with you!</p>
+        </footer>
+    </div>
+
+    <script>
+        // Countdown Logic (Target: Baraat Dec 4, 2026 18:00)
+        const targetDate = new Date("December 4, 2026 18:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+                document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+                document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+                document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+            } else {
+                document.getElementById("days").innerText = "00";
+                document.getElementById("hours").innerText = "00";
+                document.getElementById("minutes").innerText = "00";
+                document.getElementById("seconds").innerText = "00";
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // RSVP WhatsApp Submission
+        document.getElementById("rsvpForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const name = document.getElementById("guestName").value;
+            const wishes = document.getElementById("wishes").value;
+            
+            const selectedEvents = [];
+            document.querySelectorAll(".event-check:checked").forEach(cb => {
+                selectedEvents.push(cb.value);
+            });
+
+            let message = `*Wedding RSVP Response*\n\n`;
+            message += `*Guest Name:* ${name}\n`;
+            message += `*Attending Events:* ${selectedEvents.join(", ") || "None"}\n`;
+            if (wishes) {
+                message += `*Wishes:* ${wishes}\n`;
+            }
+
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/923164562513?text=${encodedMessage}`, "_blank");
+        });
+    </script>
+</body>
+                                                                     </html>
+                                                                     
